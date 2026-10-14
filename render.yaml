@@ -6,7 +6,7 @@ services:
     name: wikipacks
     runtime: node
     plan: free
-    branch: claude/charming-bell-hobd3z
+    branch: main
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/config
