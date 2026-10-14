@@ -17,7 +17,7 @@ const DATA_DIR = resolve(env.DATA_DIR || join(root, 'data'));
 const WIKI_LANG = env.WIKI_LANG || 'fr';
 const MOCK = env.WIKI_MOCK === '1';
 const USER_AGENT =
-  env.WIKI_USER_AGENT || 'WikiPacks/1.0 (jeu de cartes entre amis; https://github.com/antoine721/maquette-paris-gessur)';
+  env.WIKI_USER_AGENT || 'WikiPacks/1.0 (jeu de cartes entre amis; https://github.com/antoine721/wikipacks)';
 
 mkdirSync(DATA_DIR, { recursive: true });
 const db = openDb(join(DATA_DIR, 'wikipacks.db'));

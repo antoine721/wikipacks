@@ -16,7 +16,7 @@ mkdirSync(DATA_DIR, { recursive: true });
 const db = openDb(join(DATA_DIR, 'wikipacks.db'));
 const wiki = createWiki({
   lang: env.WIKI_LANG || 'fr',
-  userAgent: env.WIKI_USER_AGENT || 'WikiPacks/1.0 (jeu de cartes entre amis; https://github.com/antoine721/maquette-paris-gessur)',
+  userAgent: env.WIKI_USER_AGENT || 'WikiPacks/1.0 (jeu de cartes entre amis; https://github.com/antoine721/wikipacks)',
   fetchImpl: env.WIKI_MOCK === '1' ? createMockFetch({ latencyMs: 0 }) : globalThis.fetch,
 });
 const indexer = createIndexer({ wiki, db, pauseMs: Number(env.WIKI_INDEX_PAUSE_MS) || 300 });

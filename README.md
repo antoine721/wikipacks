@@ -104,12 +104,6 @@ docker run -p 3000:3000 -v wikipacks-data:/data -e INVITE_CODE=un-code-secret wi
 
 Pour une soirée entre amis sur le même Wi-Fi, `npm start` sur ton ordinateur suffit : les autres ouvrent `http://<ton-ip-locale>:3000`.
 
-## Renommer le dépôt
-
-Le nom du dépôt se change sur GitHub : **Settings → General → Repository name**, par exemple `wikipacks`. GitHub redirige l'ancienne adresse ; en local, mets à jour le remote avec `git remote set-url origin https://github.com/antoine721/wikipacks.git`.
-
-L'ancienne maquette Guessr Group reste dans l'historique git (commit `a16f7b3`).
-
 ## Organisation du code
 
 ```
